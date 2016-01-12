@@ -9,6 +9,12 @@ var iPadCorners = [
         298, 220,
         17, 559,
         179, 574
+    ],
+    eyeCorners = [
+        Math.floor(1915/2), Math.floor(2019/2),
+        Math.floor(2213/2), Math.floor(2019/2),
+        Math.floor(1901/2), Math.floor(2183/2),
+        Math.floor(2222/2), Math.floor(2186/2)
     ];
 
 function adj(m) { // Compute the adjugate of m
@@ -87,15 +93,25 @@ function transform2d(elt, x1, y1, x2, y2, x3, y3, x4, y4) {
 
 
 function update() {
+
     var ipad = document.getElementById("ipad");
-    transform2d(ipad,
+    if(ipad){
+        transform2d(ipad,
             iPadCorners[0], iPadCorners[1], iPadCorners[2], iPadCorners[3],
             iPadCorners[4], iPadCorners[5], iPadCorners[6], iPadCorners[7] );
-
+    }
     var iphone = document.getElementById("iphone");
-    transform2d(iphone,
-        iPhoneCorners[0], iPhoneCorners[1], iPhoneCorners[2], iPhoneCorners[3],
-        iPhoneCorners[4], iPhoneCorners[5], iPhoneCorners[6], iPhoneCorners[7] );
+    if(iphone){
+        transform2d(iphone,
+            iPhoneCorners[0], iPhoneCorners[1], iPhoneCorners[2], iPhoneCorners[3],
+            iPhoneCorners[4], iPhoneCorners[5], iPhoneCorners[6], iPhoneCorners[7] );
+    }
+    var eye = document.getElementById("eye");
+    if(eye){
+        transform2d(eye,
+            eyeCorners[0], eyeCorners[1], eyeCorners[2], eyeCorners[3],
+            eyeCorners[4], eyeCorners[5], eyeCorners[6], eyeCorners[7] );
+    }
 }
 
 update();
