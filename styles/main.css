@@ -1,6 +1,4 @@
-img {
-    position: absolute;
-}
+
 #container {
   position:absolute;
   width: 100%;
@@ -8,6 +6,7 @@ img {
   overflow: clip;
 }
 #ipad, #iphone {
+  position: absolute;
   z-index: -1;
   position: absolute;
   top: 0px;
