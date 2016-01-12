@@ -1,0 +1,26 @@
+img {
+    position: absolute;
+}
+#container {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  overflow: clip;
+}
+#ipad, #iphone {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* border: 1px solid red; */
+  transform-origin: 0 0;
+}
+#ipad {
+    width: 1536px;
+    height: 2048px;
+}
+
+#iphone {
+    width: 480px;
+    height: 854px;
+}
