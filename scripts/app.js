@@ -11,10 +11,10 @@ var iPadCorners = [
         179, 574
     ],
     eyeCorners = [
-        Math.floor(1915/2), Math.floor(2019/2),
-        Math.floor(2213/2), Math.floor(2019/2),
-        Math.floor(1901/2), Math.floor(2183/2),
-        Math.floor(2222/2), Math.floor(2186/2)
+        292, 232,
+        456, 233,
+        280, 308,
+        464, 310
     ];
 
 function adj(m) { // Compute the adjugate of m
