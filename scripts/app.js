@@ -5,16 +5,18 @@ var iPadCorners = [
         499, 799
     ],
     iPhoneCorners = [
-        136, 222,
+        136, 223,
         298, 220,
         17, 559,
         179, 574
     ],
+    shiftX = 2,
+    shiftY = 0,
     eyeCorners = [
-        292, 232,
-        456, 233,
-        280, 308,
-        464, 310
+        291+shiftX, 231+shiftY,
+        456+shiftX, 232+shiftY,
+        279+shiftX, 309+shiftY,
+        464+shiftX, 311+shiftY
     ];
 
 function adj(m) { // Compute the adjugate of m
