@@ -1,2 +1,2 @@
 ### Overview
-Open this to see [demo](http://francoislaberge.com/mockups/)
+See [Demo](http://francoislaberge.com/mockups/)
