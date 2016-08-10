@@ -1,0 +1,32 @@
+{
+  "name": "mockups",
+  "version": "0.1.0",
+  "description": "Easily create photos of mockups",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francoislaberge/mockups.git"
+  },
+  "keywords": [
+    "Mockups",
+    "Photos",
+    "Product",
+    "Shots",
+    "Reverse",
+    "Perspective",
+    "Transform"
+  ],
+  "author": "Francois Laberge <francoislaberge.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/francoislaberge/mockups/issues"
+  },
+  "homepage": "https://github.com/francoislaberge/mockups#readme",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
